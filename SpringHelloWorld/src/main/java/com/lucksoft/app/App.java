@@ -22,8 +22,8 @@ public class App
    @Autowired
     DataSource dataSource;
 
-    @Autowired
-    UserRepository userRepository;
+//    @Autowired
+//    UserRepository userRepository;
 
     public static void main( String[] args )
     {
@@ -36,9 +36,9 @@ public class App
  	    obj.printHelloWorld("Spring3 Java Config");
  	    
  	   System.out.println("\n1.findAll()...");
-       for (User user : userRepository.findAll()) {
-           System.out.println(user);
-       }
+//       for (User user : userRepository.findAll()) {
+//           System.out.println(user);
+//       }
 
 
     }

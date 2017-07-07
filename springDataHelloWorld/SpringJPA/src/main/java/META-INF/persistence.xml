@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="SpringJPA" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider><class>org.lucksoft.domain.User</class><class>org.lucksoft.domain.AbstractUser</class><properties>
+			<property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://127.0.0.1:3306/webdb?nullNamePatternMatchesAll=true"/>
+			<property name="hibernate.connection.username" value="webdb_user"/>
+			<property name="hibernate.connection.password" value="password123"/>
+		</properties>
+	</persistence-unit>
+</persistence>
