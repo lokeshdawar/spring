@@ -7,7 +7,6 @@ import javax.sql.DataSource;
 
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
@@ -15,13 +14,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableTransactionManagement
-@ComponentScan("com.lucksoft")
 @PropertySource("classpath:database/database.properties")
-@EnableJpaRepositories("com.lucksoft.data")
+@EnableJpaRepositories("org.lucksoft.data")
 public class DBConfig {
 	
 	private static final String PROPERTY_NAME_DATABASE_DRIVER = "db.driver";

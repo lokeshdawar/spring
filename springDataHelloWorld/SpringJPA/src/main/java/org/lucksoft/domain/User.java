@@ -7,7 +7,7 @@ import javax.persistence.Table;
  * User entity.
  */
 @Entity
-@Table(name = "User", catalog = "webdb")
+@Table(name = "USER", catalog = "webdb")
 public class User extends AbstractUser implements java.io.Serializable {
 
 	// Constructors

@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan("com.lucksoft")
 @PropertySource("classpath:application/application.properties")
 public class ApplicationConfig {
 	

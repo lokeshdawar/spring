@@ -13,7 +13,8 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext cntx = new AnnotationConfigApplicationContext("org.lucksoft");
-        UserService uService = (UserService) cntx.getBean("UserService");
+        UserService uService = (UserService) cntx.getBean("userService");
+        uService.sayHello(2);
         uService.sayHello(1);
     }
 }
