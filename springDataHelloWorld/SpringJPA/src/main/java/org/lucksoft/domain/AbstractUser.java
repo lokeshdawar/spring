@@ -38,7 +38,7 @@ public abstract class AbstractUser implements java.io.Serializable {
 	@Id
 	@GeneratedValue(strategy = IDENTITY)
 
-	@Column(name = "user_id", unique = true, nullable = false)
+	@Column(name = "id", unique = true, nullable = false)
 
 	public Integer getId() {
 		return this.id;

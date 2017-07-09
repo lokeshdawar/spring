@@ -1,7 +1,5 @@
 package org.lucksoft.app;
 
-
-
 import org.lucksoft.services.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,10 +10,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * Hello Fruzenshtein!
  *
  */
-public class App 
+public class WebApp 
 {
 	
-	private static final Logger logger = LoggerFactory.getLogger(App.class.getName());
+	private static final Logger logger = LoggerFactory.getLogger(WebApp.class.getName());
     public static void main( String[] args )
     {
     	logger.info("Getting Application Context");

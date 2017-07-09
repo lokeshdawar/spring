@@ -3,7 +3,6 @@ package org.lucksoft.config;
 import org.lucksoft.services.UserService;
 import org.lucksoft.services.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
