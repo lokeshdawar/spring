@@ -5,19 +5,19 @@
 *.pydevproject
 .project
 .metadata
-bin/
-tmp/
+bin
+tmp
 *.tmp
 *.bak
 *.swp
 *~.nib
 local.properties
 .classpath
-.settings/
+.settings
 .loadpath
-target/
+target
 .classpath
-.svn/
+.svn
 # External tool builders
 .externalToolBuilders/
 
