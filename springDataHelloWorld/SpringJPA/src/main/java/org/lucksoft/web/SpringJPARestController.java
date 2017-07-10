@@ -13,8 +13,8 @@ public class SpringJPARestController {
 	@Autowired
 	private UserService uService;
 	
-	@GetMapping("/customer/{id}")
-	public User getCustomers(@PathVariable("id") int id) {
+	@GetMapping("/user/{id}")
+	public User getUser(@PathVariable("id") int id) {
 		return uService.getUser(id);
 	}
 }

@@ -12,16 +12,16 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  */
 public class App 
 {	
-//	private static final Logger logger = LoggerFactory.getLogger(App.class.getName());
-//    public static void main( String[] args )
-//    {
-//    	logger.info("Getting Application Context");
-//        ApplicationContext cntx = new AnnotationConfigApplicationContext("org.lucksoft.config");
-//        logger.info("Getting service Interface");
-//        UserService uService = cntx.getBean(UserService.class);
-//        logger.info("Doing Service call....");
-//        uService.sayHello(2);
-//        uService.sayHello(1);
-//        logger.info("Done.......|||");
-//    }
+	private static final Logger logger = LoggerFactory.getLogger(App.class.getName());
+    public static void main( String[] args )
+    {
+    	logger.info("Getting Application Context");
+        ApplicationContext cntx = new AnnotationConfigApplicationContext("org.lucksoft.config");
+        logger.info("Getting service Interface");
+        UserService uService = cntx.getBean(UserService.class);
+        logger.info("Doing Service call....");
+        uService.sayHello(2);
+        uService.sayHello(1);
+        logger.info("Done.......|||");
+    }
 }
