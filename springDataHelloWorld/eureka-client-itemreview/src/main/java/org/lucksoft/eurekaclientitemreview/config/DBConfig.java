@@ -17,7 +17,7 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
 @Configuration
 @PropertySource("classpath:database.properties")
-@EnableJpaRepositories("org.lucksoft.springjpamvcboot.domain")
+@EnableJpaRepositories("org.lucksoft.eurekaclientitemreview.domain")
 public class DBConfig {
 	
 	private static final String PROPERTY_NAME_DATABASE_DRIVER = "db.driver";
