@@ -16,6 +16,10 @@ public abstract class AbstractItemReview implements java.io.Serializable {
 
 	// Fields
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer reviewId;
 	private Integer itemId;
 	private String itemReview;

@@ -16,15 +16,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringJPARestController {
 
 	@Autowired
-	private ItemReviewService uService;
+	private ItemReviewService irService;
 	
 	@GetMapping("/itemreviews/{itemID}")
 	public ResponseEntity getUser(@PathVariable("itemID") int itemID) {
 		//return uService.getUser(id);
-		List<ItemReview> user = uService.getItemReviews(itemID);
-		if (user == null) {
-			return new ResponseEntity("No user found for ID " + itemID, HttpStatus.NOT_FOUND);
+		List<ItemReview> iReview = irService.getItemReviews(itemID);
+		if (iReview == null) {
+			return new ResponseEntity("No Item Review found for ID " + itemID, HttpStatus.NOT_FOUND);
 		}
-		return new ResponseEntity(user, HttpStatus.OK);
+		return new ResponseEntity(iReview, HttpStatus.OK);
 	}
 }

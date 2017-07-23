@@ -1,6 +1,5 @@
 package org.lucksoft.eurekaclientitemreview.services;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.lucksoft.eurekaclientitemreview.domain.ItemReview;
@@ -15,8 +14,6 @@ public class ItemReviewServiceImpl implements ItemReviewService {
 	private ItemReviewDao itemReviewDao;
 	
 	public List<ItemReview> getItemReviews(int itemID) {
-		List<ItemReview> itl= new ArrayList<ItemReview>();
-		itl.add(itemReviewDao.findOne(itemID));
-		return itl;
+		return itemReviewDao.findByItemId(itemID);
 	}
 }
