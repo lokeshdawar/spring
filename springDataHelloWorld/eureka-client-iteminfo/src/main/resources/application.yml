@@ -1,10 +1,12 @@
+server:
+  port: 9000
 spring:
   application:
     name: spring-cloud-eureka-client-info
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:5050/eureka
     prefer-same-zone-eureka: true
   instance:
     preferIpAddress: true

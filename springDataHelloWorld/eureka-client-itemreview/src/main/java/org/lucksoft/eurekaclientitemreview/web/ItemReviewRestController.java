@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController()
-public class SpringJPARestController {
+public class ItemReviewRestController {
 
 	@Autowired
 	private ItemReviewService irService;
 	
 	@GetMapping("/itemreviews/{itemID}")
-	public ResponseEntity getUser(@PathVariable("itemID") int itemID) {
+	public ResponseEntity getItemReviews(@PathVariable("itemID") int itemID) {
 		//return uService.getUser(id);
 		List<ItemReview> iReview = irService.getItemReviews(itemID);
 		if (iReview == null) {

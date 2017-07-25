@@ -3,16 +3,16 @@
  */
 package org.lucksoft.eurekaclientiteminfo.services;
 
-import java.util.List;
-
 import org.lucksoft.eurekaclientiteminfo.domain.ItemInfo;
 import org.lucksoft.eurekaclientiteminfo.domain.ItemInfoDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @author lucky
  *
  */
+@Service
 public class ItemInfoServiceImpl implements ItemInfoService {
 	
 	@Autowired
@@ -22,7 +22,7 @@ public class ItemInfoServiceImpl implements ItemInfoService {
 	 * @see org.lucksoft.eurekaclientiteminfo.services.ItemInfoService#getItemInfo(java.lang.Integer)
 	 */
 	@Override
-	public List<ItemInfo> getItemInfo(Integer itemID) {
+	public ItemInfo getItemInfo(Integer itemID) {
 		return iiDao.findByItemId(itemID);
 	}
 
